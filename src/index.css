@@ -15,6 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: darkslategray;
 }
 
 code {
@@ -24,8 +25,8 @@ code {
 
 h1 {
   color: var(--text-main-color);
-  font-family: "Rouge Script", cursive;
-  font-size: 130px;
+  font-family: "Impact","Rouge Script", cursive;
+  font-size: 80px;
   font-weight: normal;
   line-height: 48px;
   margin: 0 0 50px;
@@ -37,6 +38,8 @@ p {
   color: #ffffff;
   font-family: "Carme", sans-serif;
   font-size: 16px;
+  text-align: center;
+  padding-top: 1rem;
 }
 
 .container {
@@ -47,12 +50,14 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 .timer__wrapper {
   border-radius: 24px;
   background-color: var(--text-shadow-color);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  box-shadow: rgba(17, 17, 26) 10px 10px 0px 4px;
 }
 .timer__display {
   padding-left: 1.5em;
@@ -61,9 +66,16 @@ p {
   font-size: 5em;
 }
 
+.splitDisplay {
+  margin-left: 2em;
+  color: #ffffff;
+  padding: 0.1em;
+  font-weight: bold;
+}
+
 .button__wrapper {
   display: flex;
-  width: 30vw;
+  /* width: 30vw; */
   padding: 1em;
   justify-content: space-evenly;
   align-items: center;
@@ -76,6 +88,7 @@ p {
   border: 1px solid white;
   padding: 1em;
   transition: ease-in-out 0.3s;
+  margin: 0 0.2em;
 }
 .button:active {
   border: 1px solid var(--text-main-color);
